@@ -1,29 +1,18 @@
 <template>
-
-  <main class="home">
-    <h1>Home view</h1>
-
-    <blogCard />
-
-    
-  </main>
-
+  <HelloWorld />
 </template>
 
 <script>
+import { defineComponent } from 'vue';
 
-  import blogCard from '../components/BlogCard.vue';
+// Components
+import HelloWorld from '../components/HelloWorld.vue';
 
-
- 
-
-
-
-export default {
+export default defineComponent({
   name: 'HomeView',
+
   components: {
-    blogCard,
-    
-}
-}
+    HelloWorld,
+  },
+});
 </script>
