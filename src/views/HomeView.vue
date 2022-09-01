@@ -1,18 +1,29 @@
 <template>
 
   <main class="home">
-    home view 
+    <h1>Home view</h1>
+
+    <blogCard />
+
+    
   </main>
 
 </template>
 
 <script>
 
+  import blogCard from '../components/BlogCard.vue';
+
+
+ 
+
+
 
 export default {
   name: 'HomeView',
   components: {
-
-  }
+    blogCard,
+    
+}
 }
 </script>
